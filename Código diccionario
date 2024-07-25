@@ -1,0 +1,13 @@
+#Diccionario
+kind_of_dictionary = {
+ 'LMAO':'Usado para expresar risa.',
+ 'CRINGE':'Algo excepcionalmente raro o vergonzoso',
+ "CREEPY":"aterrador, siniestro"
+}
+#Input
+word = input("Escribir una palabra de memes")
+if word in kind_of_dictionary:
+    print(kind_of_dictionary[word])
+else:
+    print('Esta palabra todavía no ha sido añadido al diccionario')
+    print('Desea añadir esta palabra al diccionario?')

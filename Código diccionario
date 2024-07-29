@@ -2,12 +2,19 @@
 kind_of_dictionary = {
  'LMAO':'Usado para expresar risa.',
  'CRINGE':'Algo excepcionalmente raro o vergonzoso',
- "CREEPY":"aterrador, siniestro"
+ "CREEPY":"Aterrador, siniestro",
+ "SIGMA":"Una persona de éxito y popular, aunque también silencioso y rebelde"
 }
-#Input
-word = input("Escribir una palabra de memes")
+#Inputs
+word = input("Escribir una palabra de memes ")
 if word in kind_of_dictionary:
     print(kind_of_dictionary[word])
 else:
     print('Esta palabra todavía no ha sido añadido al diccionario')
-    print('Desea añadir esta palabra al diccionario?')
+    answer = input('Desea añadir esta palabra al diccionario?: (s/n) ')
+if answer == "s":
+    new_word = input("Escribir nueva palabra (en mayúsculas): ")
+    new_definition = input("Escribir su definición: ")
+    kind_of_dictionary.update({new_word:new_definition}) 
+else:
+    print("XD")

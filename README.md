@@ -1,1 +1,1 @@
-Repositorio de mis códigos irrelevantes
+Repositorio de mis códigos irrelevantes y sin conexiones.
